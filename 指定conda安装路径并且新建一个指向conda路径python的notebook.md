@@ -20,6 +20,16 @@ export PATH="/home/username/anaconda/bin:$PATH"
 
 然后安装成功
 
+然后如果是重置服务器之后，其实安装的anaconda3还在，所以不需要重新安装，但是如果直接bash之后，输入`conda activate env_name`会显示如下错误
+
+<img width="712" alt="image" src="https://user-images.githubusercontent.com/55370336/159436477-6512ed23-9130-455e-9a7e-7e2591db4498.png">
+
+对于这个问题也很简单，只需要重新制定source就好
+
+```
+source anaconda3/etc/profile.d/conda.sh
+```
+
 ### 重头戏，指定kernel
 
 首先，我们可以先在terminal和kernel下面分别输入：
